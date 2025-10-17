@@ -1,0 +1,84 @@
+OBjective 
+1.what is Js ?
+2.where we use Js 
+3.Frameworks of Js 
+4.Printing statements
+5.ways to links js to Html
+
+
+Javascript :
+
+is Highlevel Prototype based object Oriented programming 
+Synchrounous and single Threaded language
+
+
+Javascript : 
+10days : 1995- 
+ecma - 2015  es6
+
+
+Javascript Frameworks 
+angular 
+jquary
+react
+redux
+vue js 
+react-native (mobile apps)
+next   3js ember 
+
+backend : nodejs (runtime env) express nest  mongodb
+
+
+Application : form-validation 
+ ,alert calculation  fetching weather info ,
+ payment apps ,addtocart functionality search functionality ,filtes ,slider  popups timers etc..
+
+
+Printing statements :
+1.document.write()
+2.console.log()
+3.alert()
+4.innerHtml/innerText/textContent()
+
+
+comments in js  
+// single line comments 
+/* multi line comments*/
+
+
+Different ways to integrate js into Html
+1.inline 
+2.internal 
+3.external 
+
+
+
+
+Day_2
+Varaibles : it is  a container which store  the values (datatypes)
+
+
+datatypes are values or information 
+  Primitive : Number ,string ,boolean ,null , undefined ,BigInt ,symbol  
+  non-primitive : object ,array ,function 
+
+DECLARATION  : Creation of  Varaible  
+REDECLARATION : creating a Varaible with same name in the scope is known as REDECLARATION
+INITIALZATION : assigning  a value to  varaible at time of Creation or after Creation is known INITIALZATION
+SCOPE :lifetime of varaible (accessibility of varaible with the code )
+HOISTING : all DECLARATION  are moved to top of there scope 
+
+Different Ways to create the varaible
+1.using the var keyword  :1995 
+2. using the let keyword :Es6 
+3. using the const keyword :Es6 
+4.without using keyword 
+
+
+var fullname="ravi"  function data(){} class Person{}
+
+Indentifiers :
+1. Indentifiers should not start with numbers and special character(& * ^%)  expecct $ & _ 
+2. it should contain the reserved keyword (var let const funtion for if else while class )
+3. it should contain white space eg : var full name  💮  var full_name 
+

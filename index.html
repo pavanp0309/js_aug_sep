@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal js  -->
+     <script>
+        document.write("welcome to internal js")
+       console.log("welcome to internal js")
+    //    alert("welcome to internal js")
+    // document.getElementById("id1").innerText="hi"
+     </script>
+     <!-- external js -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <p id="id1">welcome</p>
+    <!-- inline js -->
+     <button onclick="document.write('hii js ')">click</button>
+     <button onclick="console.log(2+2)">click</button>
+     <button onclick="alert('hii js ')">click</button>
+     <button onmouseover="alert('hii js ')">click</button>
+     <button ondblclick="alert('hii js ')">click</button>
+
+    <!-- internal js  -->
+     <script>
+        document.getElementById("id1").innerText="hi"
+     </script>
+
+    <!-- external js -->
+</body>
+</html>
