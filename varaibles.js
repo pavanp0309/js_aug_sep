@@ -79,24 +79,24 @@ var full_name ; //✅
 
 
 // function scope
-function sample(){
-    // console.log("g-a:",a)
-// console.log("g-b:",b)
-// console.log("g-c:",c)
-    console.log("⭐⭐fn scope⭐⭐")
-var a=10
-let b=30
-const c=40
-    console.log("f-a:",a)
-    console.log("f-b:",b)
-    console.log("f-c:",c)
-}
- console.log("⭐⭐outside scope⭐⭐")
-    // console.log("f-a:",a) //Uncaught ReferenceError: a is not defined
-    // console.log("f-a:",b) //Uncaught ReferenceError: b is not defined
+// function sample(){
+//     // console.log("g-a:",a)
+// // console.log("g-b:",b)
+// // console.log("g-c:",c)
+//     console.log("⭐⭐fn scope⭐⭐")
+// var a=10
+// let b=30
+// const c=40
+//     console.log("f-a:",a)
+//     console.log("f-b:",b)
+//     console.log("f-c:",c)
+// }
+//  console.log("⭐⭐outside scope⭐⭐")
+//     // console.log("f-a:",a) //Uncaught ReferenceError: a is not defined
+//     // console.log("f-a:",b) //Uncaught ReferenceError: b is not defined
 
-// calling the function
-sample()
+// // calling the function
+// sample()
 
 
 // REDCLARATION : creating the varaible with same name in same scope
@@ -111,3 +111,95 @@ sample()
 {
 // const c=10
 }
+
+
+// REASSIGNMENT 
+
+// var a=10
+// console.log(a) // 10
+// a=20
+// console.log(a) //20
+
+// let ab=10
+// ab=20
+
+// const c=1
+// c=2
+
+
+
+
+// HOISTING :all declaration are moved to top of there scope 
+// declaration : creation  of a varaible  : var a; let b; const c=10
+// scope :lifetime of  varaible or function etc (accessibility of varaible )
+//  Global scope : var let const  
+//  block scope:  let const 
+// function scope : var 
+
+
+// debugger;// stop excution of code 
+// var a=10
+// let b=40
+// const c=30
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// console.log(a)
+// console.log(b)
+
+
+// {
+//     debugger
+// var a=10
+// let b=10
+// const  c=10
+// }
+
+// all varaibles are hoisted to top of there scope but let and const are not initialized with value like var 
+// // variables like let and const cont be accessed before its declaration because the variables like let const will be store in tdz untill reaches its declaration 
+// debugger
+// console.log(a*10)
+// var  a=0
+// let a=10
+// let a=20
+// console.log(a)
+
+// console.log(b)
+// let b=undefined
+
+
+// var a;
+// var a;
+// let b;
+// let b;
+// const c=10;
+// const c=10;
+
+// var a; // undefined
+// console.log(c) //refrence error
+// let c;
+// console.log(c)// undefined
+// const d=10
+
+
+// function data(){ //block scope
+//     debugger
+//     var a="mobile" //function scoped
+//     let b="lp" // block scope
+//     const c="AC" //block scope
+// }
+
+//  data()
+
+
+console.log(a)// undefined
+var a=10
+console.log(a)// 10
+
+console.log(b) //refrence error 
+let b=10
+b="hii"
+const c=10
+

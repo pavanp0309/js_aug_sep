@@ -62,7 +62,7 @@ datatypes are values or information
   Primitive : Number ,string ,boolean ,null , undefined ,BigInt ,symbol  
   non-primitive : object ,array ,function 
 
-DECLARATION  : Creation of  Varaible  
+DECLARATION  : Creation of  Varaible or function or class   
 REDECLARATION : creating a Varaible with same name in the scope is known as REDECLARATION
 INITIALZATION : assigning  a value to  varaible at time of Creation or after Creation is known INITIALZATION
 SCOPE :lifetime of varaible (accessibility of varaible with the code )
