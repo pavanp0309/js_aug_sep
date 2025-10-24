@@ -162,17 +162,129 @@
 
 
 // caliculate the sum of the digits 
-let n=134 // 1+3+4 ==8
-console.log(134%10) // 4
-let last1=134%10 //4
-console.log(last1)
-let first=Math.floor(134/10)
-console.log(first)//13
-let last2=first%10
-console.log(last2) // 3
-let first1= Math.floor(first/10)
-console.log(first1) // 1
+// let n=134 // 1+3+4 ==8
+// console.log(134%10) // 4
+// let last1=134%10 //4
+// console.log(last1)
+// let first=Math.floor(134/10)
+// console.log(first)//13
+// let last2=first%10
+// console.log(last2) // 3
+// let first1= Math.floor(first/10)
+// console.log(first1) // 1
 
-let result=last1 +last2 +first1
-console.log(result)
-// console.log(134//10)
+// let result=last1 +last2 +first1
+// console.log(result)
+// // console.log(134//10)
+
+
+// Increment operators (++)
+    // 1.Pre-increment : increment the value by one before it is printed 
+    // 2.Post-increment : increment the value by one after is been used 
+// decrement operators (--)
+//    1.Pre-decrement : decrement the value by one before it is printed 
+    // 2.Post-decrement : decrement the value by one after is been used 
+
+
+// let n=2
+// console.log(++n) //3 pre increment
+// console.log(n++) //2 post increment
+// console.log(n)//3
+
+// console.log(--n) //2 pre-decrement 
+// console.log(n--) //2 post-decrement 
+// console.log(n)//1
+
+// console.log(--n)//1
+// console.log(--n)//0
+// console.log(--n)//0
+
+
+// let a=3     // 4 3 4
+// let b=4    // 3 4 5
+
+// let cal=a + ++a + a-- + --b + ++b - b++ + a++ + a + --b
+// //      3 +  4 + 4 + 3 + 4 -4 + 3 + 4+ 4 
+// console.log(cal)
+
+
+
+// let d=5 
+// let e=8 
+// let res= d++ - ++d +e++ - ++d/ + --e + e-- +d-- +--d +e++ + ++e
+          
+// console.log(res)
+
+
+// let a1=3
+// let b1=4
+// let c1=6
+
+// // let res=a1+ b1++ + --b1 + a1++ - b1++ - --a1 + ++a1 + b1++ + a1+b1  //26
+//         // 3+4+4+3-4-3+4+5+4+6==26
+
+// let res1=a1+b1+c1-++a1+ ++b1 + ++c1 -c1++ - b1++ + a1++ + b1++ - ++a1 + a1*b1-b1++
+//        //3+4+6-4+5+7-7-5+4+6-6+6*7-7 //48
+//     console.log(res1)
+
+
+
+// logical operators 
+//  && -- and operator  
+//   || -- OR operator   
+// ! --- not operator
+
+// console.log(true&&true) //true
+// console.log(true&&false) //false
+// console.log(true || false) //true
+// console.log(!true ) //false
+// console.log(!!true ) //true
+
+
+// comparision operator 
+// > ,>= ,< ,<= ,== ,=== ,!= !== 
+// let age=18
+// let isIndian=false
+// console.log(age>=18)// true
+// console.log(age<=18)//true
+// console.log(age<18)//false
+// console.log(age>18)//false
+// console.log(age>=18&&isIndian)//false
+// console.log(age>=18||isIndian)//false
+// console.log(12==12)//true
+// console.log(12=="12")// true
+// console.log(12=="21")//false
+// console.log(12==="12")//false
+// console.log(12!=12)//false
+// console.log(12!="12")// false
+// console.log(12!=="12")//true
+
+
+// TERNARY OPERATOR (syntatic sugar of if-else condition)
+// let selection="firstclass"
+// if(selection=="firstclass"){//condition
+//    console.log(100)
+// }else{
+//     console.log(50)
+// }
+
+
+// let res=(condition)?"value if condition is true":"value if condition is false"
+// let price=(selection=="firstclass")?console.log(100): console.log(50)
+
+// let age=18
+// let amount=600
+// let isprime=true
+// let avail=(age>=18&&isprime)?(amount>500?"free-delivary":"50rs "):(amount<500?"add items to apply discount&free-delivary":"no-discount")
+// console.log(avail)
+
+
+let a=10
+
+// console.log(a=a+10)
+console.log(a+=10)
+console.log(a*=10)
+console.log(a-=10)
+console.log(a/=10)
+console.log(a%=10)
+console.log(a**=10)
