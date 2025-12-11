@@ -16,6 +16,7 @@ function loadCartItems(){
       
         
         updateCartUi()
+        cartIconTotal()
     }
 }
 
@@ -72,13 +73,15 @@ function updateCartUi(){
     //    appending the child element
     cart.appendChild(divEle)
     })
-
+handleCartTotal()
+cartIconTotal()
 }
 // function to handleIncrement
 function handleIncrement(ele,q){
     ele.qunatity++
     q.textContent=ele.qunatity
     localStorage.setItem("cart",JSON.stringify(cartItems))
+    handleCartTotal()
 }
 // function to handledecrement
 function handleDecrement(ele,q){
@@ -87,16 +90,40 @@ function handleDecrement(ele,q){
     q.textContent=ele.qunatity
     localStorage.setItem("cart",JSON.stringify(cartItems))
     }
+    handleCartTotal()
 }
 // function to handledelete
 function handledelete(ele){
     cartItems=cartItems.filter(el=>el.title!==ele.title)
     localStorage.setItem("cart",JSON.stringify(cartItems))
    updateCartUi()
+   handleCartTotal()
+}
+
+// function to handlecartTotal
+function handleCartTotal(){
+    let cartTotal=document.querySelector(".cart-total-val")
+    let total=cartItems.reduce((acu,ele)=>acu+ele.price*ele.qunatity,0)
+
+    cartTotal.innerHTML=`<span>Total:</span><span class="cart-total-val">${total}</span>`
+}
+// function to handlecartIconTotal
+// function to show the cart icon total
+function cartIconTotal(){
+    // 🚨accessing the Carticon value
+    let cartIcon=document.querySelector(".cart-icon-val");
+    //🔥🔱 calculating the Total items in cart
+    let cartTotal=cartItems.reduce((acc,ele)=>{
+    console.log("acc",acc)
+    console.log(ele.qunatity)
+    return acc +ele.qunatity
+},0)
+// 🔥🔱updating the carticon
+cartIcon.innerText=cartTotal
+
 }
 // function to handledelelteall
-function handleDelelteall(){}
-// function to handlecartTotal
-function handleCartTotal(){}
-// function to handlecartIconTotal
-function handleCartIconTotal(){}
+function handleDelelteall(){
+    cartItems.splice()
+    localStorage.clear()
+}

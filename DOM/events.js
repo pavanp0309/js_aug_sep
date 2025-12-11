@@ -19,9 +19,9 @@
 
 
 // // event handler
-// function addtocart(){
-//    alert("added item to cart")
-// }
+function addtocart(){
+   alert("added item to cart")
+}
 
 
 // let btnele=document.getElementById("btn")
@@ -56,19 +56,29 @@ let btnele1=document.querySelector(".btn2")
 //     console.log(event.stopImmediatePropagation())
 //     console.log("parent is excuted")
 // },{capture:true})
+parentele.addEventListener("click",(e)=>{
+    // e.stopPropagation()
+    e.stopImmediatePropagation()
+    console.log("parent is excuted")
+},true)
+parentele.addEventListener("click",(e)=>{
+    console.log("parent is excuted")
+},true)
+childele.addEventListener("click",()=>{
+    console.log("child is excuted")
+},{capture:true})
+btnele.addEventListener("click",()=>{
+    console.log("btn is excuted")
+})
+btnele1.addEventListener("click",()=>{
+    console.log("btn-1 is excuted")
+})
+
 // parentele.addEventListener("click",(e)=>{
-//     console.log("parent is excuted")
-// },{capture:true})
-// childele.addEventListener("click",()=>{
-//     console.log("child is excuted")
-// },true)
-// btnele.addEventListener("click",()=>{
-//     console.log("btn is excuted")
-// })
-// btnele1.addEventListener("click",()=>{
-//     console.log("btn-1 is excuted")
+//     console.log(e.target.classList.toggle("c1"))
 // })
 
-parentele.addEventListener("click",(e)=>{
-    console.log(e.target.classList.toggle("c1"))
-})
+
+
+// let pele=document.querySelector(".parent")
+// parentele.addEventListener("click",(e)=>console.log(e.target.value))
